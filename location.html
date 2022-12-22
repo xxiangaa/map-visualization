@@ -1,0 +1,148 @@
+<html>
+	<link rel="stylesheet" type="text/css" href="assets/css/common.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="js/fusioncharts.js"></script>
+	<script src="js/fusioncharts.maps.js"></script>
+
+	<script type="text/javascript">
+		var dataSource = {
+		  chart: {
+			showlegend: 0,
+			caption: "Metopia Hadware Distribution",
+			nullentityfillcolor: "#757DE8",
+			showmarkerlabels: "0",
+			showentitytooltip: "0",
+			showentityhovereffect: "0",
+			theme: "fusion"
+		  },
+		  markers: {
+			items: [
+			  {
+				id: "m1",
+				shapeid: "metopia-anchor",
+				x: "390",
+				y: "401",
+				label: "堅尼地城",
+				value: "1",
+				tooltext: ""
+			  },{
+				id: "m2",
+				shapeid: "metopia-anchor",
+				x: "391",
+				y: "400",
+				label: "堅尼地城",
+				value: "2",
+				tooltext: ""
+			  },{
+				id: "m3",
+				shapeid: "metopia-anchor",
+				x: "392",
+				y: "402",
+				label: "堅尼地城",
+				value: "3",
+				tooltext: ""
+			  },{
+				id: "m4",
+				shapeid: "metopia-anchor",
+				x: "389",
+				y: "403",
+				label: "堅尼地城",
+				value: "4",
+				tooltext: ""
+			  },{
+				id: "m5",
+				shapeid: "metopia-anchor",
+				x: "388",
+				y: "403",
+				label: "堅尼地城",
+				value: "5",
+				tooltext: ""
+			  },{
+				id: "m6",
+				shapeid: "metopia-anchor",
+				x: "387",
+				y: "402",
+				label: "堅尼地城",
+				value: "6",
+				tooltext: ""
+			  },{
+				id: "m7",
+				shapeid: "metopia-anchor",
+				x: "386",
+				y: "402",
+				label: "堅尼地城",
+				value: "7",
+				tooltext: ""
+			  },{
+				id: "m8",
+				shapeid: "metopia-anchor",
+				x: "385",
+				y: "401",
+				label: "堅尼地城",
+				value: "8",
+				tooltext: ""
+			  },{
+				id: "m9",
+				shapeid: "metopia-anchor",
+				x: "405",
+				y: "395",
+				label: "西營盤",
+				value: "9",
+				tooltext: ""
+			  },{
+				id: "m10",
+				shapeid: "metopia-anchor",
+				x: "410",
+				y: "394",
+				label: "西營盤",
+				value: "10",
+				tooltext: ""
+			  },{
+				id: "m11",
+				shapeid: "metopia-anchor",
+				x: "413",
+				y: "395",
+				label: "西營盤",
+				value: "11",
+				tooltext: ""
+			  },{
+				id: "m12",
+				shapeid: "metopia-anchor",
+				x: "450",
+				y: "410",
+				label: "灣仔",
+				value: "9",
+				tooltext: ""
+			  }
+			],
+			shapes: [
+			  {
+				id: "metopia-anchor",
+				type: "image",
+				url:
+				  "https://cdn-icons-png.flaticon.com/512/684/684908.png",
+				xscale: "1",
+				yscale: "1"
+			  }
+			]
+		  }
+		};
+
+		FusionCharts.ready(function() {
+		  var myChart = new FusionCharts({
+			type: "hongkong",
+			renderAt: "chart-container",
+			width: "100%",
+			height: "100%",
+			dataFormat: "json",
+			dataSource
+		  }).render();
+		});
+	</script>
+	<body>
+		<div id="chart-container"></div>
+	</body>
+</html>
+
+
+
